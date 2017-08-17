@@ -1,0 +1,246 @@
+PersonalTODOs -*- mode: org -*-
+#+TAGS: { @OFFICE(o) @HOME(h) } COMPUTER(c) READING(r) ARCHIVE(a) PROJECT(p)
+#+STARTUP: latexpreview
+#+STARTUP: indent
+#+STARTUP: Visual-Line
+
+
+* APPOINTMENTS/DEADLINES
+** Application deadline for UQ <2017-05-30 Tue>
+
+* INBOX
+:PROPERTIES:
+:CATEGORY: Tasks
+:END:      
+
+** TODO Program an integrating function for improper integrals
+
+The contract is to convert 6 formulas to a python implementation. They are all statistical equations, which rely on statistical theories.
+
+In order to determine current confidence levels, a method is needed to correlate between probabilies and z scores. The most simple way to do this would be to scrape a table for the normal z score distribution, save it as an array and use a formula to do a lookup on the table. Another method is to program the actual formula to calculate the probabilty from theory. Since the equation for the probability must be solved numerically, you would need to program in some form of numerical integration to solve the equations:
+
+The Cumulative Standard Normal Distribution
+
+$$ P(Z <= z) = \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}}e^{\frac{-u^2}{2}}du $$
+
+In order to integrate the improper integrals you need to substitute the infinite limit to another using the rule:
+
+$$ \int_{a}^{b}f(x)dx = \int_{\frac{1}{b}}^{\frac{1}{a}}(\frac{1}{t^2})f(\frac{1}{t})dt $$   for a,b > 0
+
+However since going from a negative to a postive number will eventually cross 0, which will result in a divide by 0 due to the fraction, we need to split the solution up into three parts. The original problem will then become:
+
+$$ \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}}e^{\frac{-u^2}{2}}du =  \int_{-\infty}^{-A}f(x)dx + \int_{-A}^{-B}f(x)dx + \int_{-B}^{\infty}f(x)dx $$
+
+And the you run a numerical integration methods on those three integrals, making the substitutions for the two improper integrals on the ends.
+
+** TODO Change return flight to Novemeber(Pricsilla's week)
+ Novemeber 20 -26
+Call Air Canada: 1-888-247-2262
+Booking Ref#: N4538Z
+Can apparently change the flight up to 2 hours before the flight departure
+
+** TODO Craft cold application for Pi Engineering and apply
+
+
+* PROJECTS
+:PROPERTIES:
+:CATEGORY: Project
+:END:
+** Personal Website
+*** Dev Logbook
+**** June 2017
+***** 23
+Push latest changes to heroku. There was an issue building the django project locally since there were updates made to the local installation of Python (the one in C:\Python35-32). It seems updating the main installed python will affect the virtual environments attached to it. In order to fix the problem I had to delete the old venv, recreate the venv and reinstall all the packages. After this it worked but in the process I updated all the package to the next version as well (eg using django 1.11 now instead of 1.10).
+To avoid other headaches I didnt' change requirements.txt which still references the old versions. Now heroku is still running on the old versions while the local copy is running on the newer versions. Obviously that may cause even more headaches down the road. I simply need to test heroku with an updated requirements.txt to make sure it works with the new versions on heroku.
+
+***** 24
+Created method to rename recipes. Right now simply promts the user for the new name instead of creating a textinput box with a save button. Not as clean but will at least function in the short term.
+**** July 2017
+***** 15
+Implementing sections and inserting items and amounts into the method and item list will require a parsing system
+
+The syntax that will be used could be:
+
+--Section Name--
+{item name}
+***** 18
+Implemented "sections" and automatic insertion of item amounts into the method using the syntax grammer. Created various functions in the Version model to parse the item method list to prepare for display
+
+models.py
+ - add item_list_parser()
+ - Modified Version class:
+   * add method parse_item_list()
+   * add build_itemdict()
+   * add complie_method()
+   * modify method_as_list()
+   * modify item_as_list
+
+recipe_display.html
+ - modified structure to accepty structured list with section and items for each section
+
+
+
+*** Recipe App
+
+**** Planning
+
+***** Functional Phase [100%]
+GOAL: Create a website that may not look very good (styling/animations) but will function properly with ability to:
+
+- [X] Edit a version
+- [X] Create new version from old version
+- [X] Edit revision notes
+- [X] history section
+  - [X] Ask for revision notes somehow
+  - [X] Load version on click in history panel
+- [X] Create a new recipe
+- [X] Get filtered list of recipes (async)
+- [X] Create new recipe from current version
+- [X] Delete a version
+- [X] Delete recipe
+- [X] Set favorite version
+- [X] Edit recipe name
+- [X] Prevent default "None" from showing up in empty fields
+- [X] Add external site link field - to link to recipe sources
+
+***** Feature Phase [50%]
+- [ ] Scale recipe amounts
+- [ ] Back button to go to last view?
+- [ ] Implement user profiles
+- [ ] Manage plural vs. singular units (cups/cup)
+- [ ] Add abiltiy to show item in different unit
+  Options:
+  1. In display, on click bring up button "convert to.." which shows drop down of possible units on click
+  But how to save user preferences? user preferences!
+- [X] multi-section recipes (eg. one for the sauce, one for the meat)
+- [X] Insert ingredient amounts into method autamagically
+- [X] Preserve item order in save/load
+  1. Save the item id's to the version as text field
+  2. Save the order number as a field in the item listing
+  3. Save the itemlist as a text field in the version
+- [X] Units are not being recognized by the regex
+  The original regex had a regular string with '\b' for word seperations, however the \ in a regular string will escpape the \. In order to fix, had to either use raw strings with r'' or escape the escape with '\\b'
+- [X] Handle fractions in item amounts
+- [X] Add place to cite external link
+- [ ] Add ability to add photos to the recipe
+  The issue with the current setup using heroku is that heroku will upload any images to a temporary process. This means that any uploads will not persist to a different session. The only way to put images into the website is to upload them with a git push. This will work only as an administrative push, but is comletely useless for a user. In order to get images to work for users, I will need a content delivery service account (AWS, google, Azure), and set them up to work with heroku.
+
+***** Pretty it up Phase
+- [ ] Disable history panel when editing to not change the current one
+
+**** Changing app name steps:
+
+Change the db settings:
+- [X] UPDATE django_content_type SET app_label='recipelab' WHERE app_label='RecipeManager';
+- [X] ALTER TABLE "RecipeManager_itemlist" RENAME TO recipelab_itemlist;
+- [X] ALTER TABLE "RecipeManager_version" RENAME TO recipelab_version;
+- [X] ALTER TABLE "RecipeManager_recipe" RENAME TO recipelab_recipe;
+- [X] UPDATE django_migrations SET app='recipelab' WHERE app='RecipeManager';
+**** WHY?
+- to help me organize my recipes
+- To track changes I make to recipes to understand improvements
+- To share with other people my methods
+- to easily find recipes I like again
+- to fine recipes that use the ingredients that I want
+- to learn how to make a complicated website
+*** Projects/Tutorials Page
+
+
+*** Task managment App
+*** Resume Serving App
+**** TODO A unique link to a job application
+This will allow you to create curtom views of a resume for a given job application, track whether or not they go and see it, and see how long they spend on a certain part of the resume.
+**** TODO Create custom faces of a resume
+*** Blog App
+** Deep Learning
+** Saddle Measurement
+** Hand Counting App
+** Natural Language Scripting Inerpreter
+*** WHAT
+An interpreter that can read natural language descriptions of an action and convert it into a scripting language (power shell, python) to make automation of simple tasks more accessible to the average user
+
+It should be able to read a set of instructions and figure out what the intent is of the statement, relay back what it thinks it needs to do, give an estimate of what the result will be, and then o
+nce the user approves execute the action using a scripting language of the users choice.
+
+Can also just output the script in a language of choice that a user can save and execute at some later date.
+*** HOW
+**** Loops
+**** variables
+**** how to read the script
+The scripts will not all read the same, since in order for it to have the 'natural' language feel you will need to be able to use various words for the same meaning.
+Ultimately there will have to be some level of learning curve, but I the whole point of this will for it to be as simple as possible for the lay user.
+**** Target Applictions
+As with any thing, it will ussually work best if a specific target is in mind to spearhead its deployment. The application can then be expanded to build on the established usefullness.
+
+- filename changes
+- searching
+
+** Analysis of carbon capture tech, design of carbon capture
+- Some kind of small solar powered thing that can use the sun to extract carbon from the air.
+
+** Anaylsis if wind energy, why isn't it working
+- The energy is just too spread out, and there is no really effective way of gathering the energy to a concentration that is acceptable.
+- The range of concentration on energy in the wind is also fairly large, as in pretty low density in light winds, and overwhelminly intense in heavy winds, which makes it pretty hard to work with and most conditions
+- Since the high energy density in high winds can be so destuctive, most engineering solutions try to plan for the higher end of the spectrum, since this is also when most energy can be gathered most efficiently. However the leaves pretty large gaps in the times that energy can be gathered, since the wind isn't always blowing hard, as well as increasing the costs of the facility which need to be able to handle higher winds
+- contracting with solar, the panels do not suffer from the range of density like wind does, the sun can shine intensely or not at all, with a fairly linear response in effectiveness. This makes one cost for the equipment
+* SOMEDAY
+** Hydrofoil
+** RPi Printer
+** Receipt Reader
+** Make Tutorials
+** OpenFOAM Helper
+** Coffee Tamping Machine
+A machine that uses a weight to apply a maximum force of tamping to a coffee filter, allowing users to set the amount of force they want use in their tamping. Could potentially use springs of some kind, or a weight system.
+** Reactionless Engine
+** Dyson Rocket Engine - Air feeder/rocket hybrid
+* Weekly
+** TODO Look at new job postings
+SCHEDULED: <2017-07-31 Mon +1w>
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:03]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:02]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:02]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:02]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:13]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:13]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:12]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:10]
+:END:
+:PROPERTIES:
+:LAST_REPEAT: [2017-07-12 Wed 10:03]
+:END:
+
+** TODO Look at meet up groups for new events
+SCHEDULED: <2017-07-10 Mon +1w>
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:06]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:06]
+- State "DONE"       from "TODO"       [2017-07-12 Wed 10:06]
+- State "STARTED"    from "WAITING"    [2017-05-03 Wed 21:13]
+- State "WAITING"    from "STARTED"    [2017-05-03 Wed 21:12]
+- State "DONE"       from "WAITING"    [2017-05-03 Wed 21:12]
+- State "WAITING"    from "STARTED"    [2017-05-03 Wed 21:12]
+- State "RESOLVED"   from ""           [2017-05-03 Wed 21:11]
+- State "DONE"       from "WAITING"    [2017-05-03 Wed 21:11]
+- State "WAITING"    from "STARTED"    [2017-05-03 Wed 21:11]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:11]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:11]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:11]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:11]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:10]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:10]
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:10]
+:END:      
+:PROPERTIES:
+:LAST_REPEAT: [2017-07-12 Wed 10:06]
+:END:
+
+

@@ -1,0 +1,326 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file c:/Users/Neale/Desktop/Org/TODO.org
+
+
+* Archive
+
+** DONE Research using org-mode                                                 :READING:
+   CLOSED: [2017-04-02 Sun 22:25]
+   :LOGBOOK:  
+   - State "DONE"       from "TODO"       [2017-04-02 Sun 22:25]
+   :END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-03-22 Wed 08:45
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: TODO
+   :ARCHIVE_TODO: TODO
+   :END:
+
+** DONE Send holiday dates to Pappa to check for flights
+CLOSED: [2017-03-25 Sat 16:50]
+:LOGBOOK:  
+- State "DONE"       from "NEXT"       [2017-03-25 Sat 16:50]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-03-25 Sat 16:53
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Follow up with DBrock, see if he received the new form - otherwise will have to update his address too :COMPUTER:
+   CLOSED: [2017-03-22 Wed 08:24] SCHEDULED: <2017-03-22 Wed>
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-03-22 Wed 08:24]
+- State "TODO"       from "DONE"       [2017-03-22 Wed 08:24]
+- State "DONE"       from "CANCELLED"  [2017-03-22 Wed 08:23]
+- State "DELEGATED"  from "WAITING"    [2017-03-22 Wed 08:23]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-03-29 Wed 09:47
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: PROJECTS/PENG APPLICATION
+   :ARCHIVE_CATEGORY: Project
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Follow up with Harjot to make sure he has submitted his questionnaire
+CLOSED: [2017-04-02 Sun 22:19] SCHEDULED: <2017-03-22 Wed>
+:LOGBOOK:  
+- State "DONE"       from "NEXT"       [2017-04-02 Sun 22:19]
+- State "DONE"       from "NEXT"       [2017-04-02 Sun 22:19]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-02 Sun 22:23
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: PROJECTS/PENG APPLICATION
+   :ARCHIVE_CATEGORY: Project
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Book health checks for me and Priscilla for PR
+CLOSED: [2017-04-02 Sun 22:30]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-04-02 Sun 22:30]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-04 Tue 20:08
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Apply for PR
+CLOSED: [2017-04-10 Mon 15:54]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-04-10 Mon 15:54]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-10 Mon 20:58
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Apply for Australian police checks
+CLOSED: [2017-04-10 Mon 15:54]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-04-10 Mon 15:54]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-10 Mon 20:59
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Get health checks done
+CLOSED: [2017-04-10 Mon 15:53] SCHEDULED: <2017-04-04 Tue>
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-04-10 Mon 15:53]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-10 Mon 20:59
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Email Bridget Teirney (bteirney@gmail.com) about engineering work
+CLOSED: [2017-04-10 Mon 15:47]
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-10 Mon 21:00
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Order Canadian police checks for both of us
+CLOSED: [2017-04-27 Thu 16:39]
+:LOGBOOK:  
+- State "DONE"       from "WAITING"    [2017-04-27 Thu 16:39]
+- State "WAITING"    from "STARTED"    [2017-04-13 Thu 22:08] \\
+  Application documents have been couriered, waiting for arrival and submition to RCMP
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-27 Thu 16:39
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Order Police Reports for Priscilla
+CLOSED: [2017-04-13 Thu 08:39] SCHEDULED: <2017-04-12 Wed -1d>
+:LOGBOOK:  
+- State "DONE"       from "WAITING"    [2017-04-13 Thu 08:39]
+- State "WAITING"    from "STARTED"    [2017-04-10 Mon 07:43] \\
+  Police station for fingerprints is only open M-F from 8am -4pm. Priscilla is working night from W/R, so will go on Wednesday.
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-27 Thu 16:40
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+[[https://www.canadianlegal.org/ink-digitization/][Canadian Legal Site]] - RCMP Check
+AFP NPC - Complete
+
+** DONE Book flights to Melboune
+CLOSED: [2017-04-24 Mon 14:08]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-04-24 Mon 14:08]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-27 Thu 16:40
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+Fly on May 10, exam on May11, Fly back on Sat, May 13 , since Prisclla is working on the 14
+
+Flight are booked, ref#: QBUMMS
+
+** Job/Career
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-04-27 Thu 16:41
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: PROJECTS
+   :ARCHIVE_CATEGORY: Project
+   :END:
+*** Software
+**** Business Analyst
+*** Banking
+*** Engineering
+
+** PENG APPLICATION
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-05-03 Wed 21:06
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: PROJECTS
+   :ARCHIVE_CATEGORY: Project
+   :END:
+
+*** DONE Follow up with Heitzmann - make sure he redoes his form/tell him he needs to redo it
+CLOSED: [2017-04-13 Thu 08:43] SCHEDULED: <2017-03-30 Thu>
+:LOGBOOK:  
+- State "DONE"       from "WAITING"    [2017-04-13 Thu 08:43]
+:END:      
+
+*** DONE Follow up on WES report, if no response on WES report - order new WES report to APEGA
+CLOSED: [2017-04-13 Thu 08:43] SCHEDULED: <2017-03-30 Thu>
+:LOGBOOK:  
+- State "DONE"       from "WAITING"    [2017-04-13 Thu 08:43]
+:END:      
+
+<2017-03-29 Wed> Report ordered  to be sent to APEGA Ref#: 3181281
+
+** PR APPLICATION
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-05-03 Wed 21:07
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: PROJECTS
+   :ARCHIVE_CATEGORY: Project
+   :END:
+
+A total of 60 points are required to apply for permanent residency.
+
+Current points tally is
+
+
+| Reason                                          | Points |
+|-------------------------------------------------+--------|
+| Aged 25-32                                      |     30 |
+| Skilled employment in Aus for at least one year |      5 |
+| bachelors degree from an ausralian ints.        |     15 |
+| Autralian study requirements met                |      5 |
+|-------------------------------------------------+--------|
+| TOTAL                                           |     55 |
+|-------------------------------------------------+--------|
+#+TBLFM: @6$2=vsum(@2..@5)
+
+*** Additional Points
+**** Neale's skill assessment for partner points
+In order for me to use my skills for partner points I will need to get a skills assessment done by Engineers Australia
+
+Cost:
+$440 for the migration skills assesment [[https://www.engineersaustralia.org.au/For-Migrants/Migration-Skills-Assessment/Migration-Fees][EA Fees guide]]
+$275 for fast track assement - which is currently at 26 days due to delays
+
+***** Documents Needed:
+     - [X] Scan of Degree
+     - [X] Scan of Transcripts
+     - [X] Passport bio
+     - [X] Passport style photograph
+
+** DONE Submit all required documents to the IMMI form
+CLOSED: [2017-05-03 Wed 21:08] DEADLINE: <2017-05-01 Mon -3d> SCHEDULED: <2017-04-19 Wed>
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-05-03 Wed 21:08]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-05-03 Wed 21:09
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** CANCELLED Email APEGA to inquire about Data Validation progress
+CLOSED: [2017-05-03 Wed 21:09] DEADLINE: <2017-05-04 Thu>
+:LOGBOOK:  
+- State "CANCELLED"  from "TODO"       [2017-05-03 Wed 21:09] \\
+  They replied that the data validation process is complete with an esitmated 12 month completion time...
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-05-04 Thu 09:42
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: CANCELLED
+   :END:
+[2017-05-02 Tue 13:07]
+
+** TODO Complete Upwork Contract
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-07-12 Wed 10:31
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: TODO
+   :END:
+The contract is to convert 6 formulas to a python implementation. They are all statistical equations, which rely on statistical theories.
+
+In order to determine current confidence levels, a method is needed to correlate between probabilies and z scores. The most simple way to do this would be to scrape a table for the normal z score distribution, save it as an array and use a formula to do a lookup on the table. Another method is to program the actual formula to calculate the probabilty from theory. Since the equation for the probability must be solved numerically, you would need to program in some form of numerical integration to solve the equations:
+
+The Cumulative Standard Normal Distribution
+
+$$ P(Z <= z) = \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}}e^{\frac{-u^2}{2}}du $$
+
+In order to integrate the improper integrals you need to substitute the infinite limit to another using the rule:
+
+$$ \int_{a}^{b}f(x)dx = \int_{\frac{1}{b}}^{\frac{1}{a}}(\frac{1}{t^2})f(\frac{1}{t})dt $$   for a,b > 0
+
+However since going from a negative to a postive number will eventually cross 0, which will result in a divide by 0 due to the fraction, we need to split the solution up into three parts. The original problem will then become:
+
+$$ \int_{-\infty}^{z} \frac{1}{\sqrt{2\pi}}e^{\frac{-u^2}{2}}du =  \int_{-\infty}^{-A}f(x)dx + \int_{-A}^{-B}f(x)dx + \int_{-B}^{\infty}f(x)dx $$
+
+And the you run a numerical integration methods on those three integrals, making the substitutions for the two improper integrals on the ends.
+
+** DONE Book parking with Priscilla Credit Card
+CLOSED: [2017-07-21 Fri 11:47]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-07-21 Fri 11:47]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-08-04 Fri 10:59
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+
+** DONE Book flights to Canada
+CLOSED: [2017-06-30 Fri 14:16]
+:LOGBOOK:  
+- State "DONE"       from "TODO"       [2017-06-30 Fri 14:16]
+:END:      
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2017-08-04 Fri 10:59
+   :ARCHIVE_FILE: c:/Users/Neale/Desktop/Org/TODO.org
+   :ARCHIVE_OLPATH: INBOX
+   :ARCHIVE_CATEGORY: Tasks
+   :ARCHIVE_TODO: DONE
+   :END:
+

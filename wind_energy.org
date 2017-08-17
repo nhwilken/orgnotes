@@ -1,0 +1,57 @@
+#+STARTUP: indent
+
+* What are we comparing
+In a world where there are so many claims, all we really want to know what do the facts say. Wind energy is a fairly controversial form of alternative energy. There are various objections ranging from environmental damange (think birds) to overall ineffeicieny compared to other forms of energy like solar
+
+In this article, for simplicity sake, I will attempt to contract wind energy and solar energy two forms of energy production to see if one is far greater than the other, and make a case for where wind is worth persuing at all or is there a place yet for wind energy
+
+* How do we measure efficiency in alternative energy (compare)
+** On a cost basis
+** On a total energy Basis
+* How do they stack up against each other
+
+* Analysis of wind - What are the issues
+** TODO Investigate if solar energy is more concentrated than wind
+** What are the issues
+The biggest issue with wind is that the energy density is so low, that is that the energy in wind is so spread out that its hard to efficiently collect the energy into concentrations that are usefull to people. Unlike solar, whose energy is comparativley condensed ? or is it?
+
+** What can be done to make it better
+** Can it come close to other?
+** Is it worth it in the long run?
+
+* Case Study
+Look at an area - and see what would be better wind or solar
+
+The question is how can you potentially break down the analysis of something like a wind farm
+
+Modeling an entire field with moving turbines and all would be a momentus undertaking. So to make it more reasonable we can take a few shortcuts. First, instead of modeling the whole turbine we can realize that the amount of power produced it mostly effected by the interaction bewteen the wind and turbine itself. We can assume that the turbine can change its orientation to be facing the optimal direction (horizontally), but can't do much to improve the vertical orientations. This first task then is to understand how the turbine's interaction with the wind occurs.
+
+We need to identify the key factors that affect the turbine efficiency.
+
+    - Horizontal Direction - We can assume that the turbine is pivit 360 deg in a horizontal direction, and therefore the turbine should always be facing the optimal angle
+    - Vertical Direction - There isn't much that the turbine can do to improve the vertical orientation of the wind, so we need to understand how vertical wind velocities effect performance.
+    - Turbine pitch - the rotors of the turbine can change so that the angle of attack is altered, typically used to controll the speed of the turbine is high winds
+    - Wind speed
+    - Wind directions
+    - Wind gusts vs smooth even wind
+    - Air density/Elevation/Humidity
+
+There are a lot of variables, one way to try and understand all their interactions is using experimental design. To reduce the cost of the experimental process (since we may not have to since all possible permutations) and to better understand relationhips bewteen the variables.
+
+Create a model of the turbine and using CFD analysis we can run many scenarios, inputting the results of the expiriment into the experimental array. Can create the turbine using any CFD software or using exisiting designs.
+
+Then you need to test to see if the are significant effects from the structure of the wind turbine to the performance of the turbine itself. Assuming this is verfied as true you can move on to the next phase of the analysis.
+
+Once it is known how the various factors effect the performance of the turbine, we need to run a seperate analysis in order to determine the conditions at each turbine location, for a hypothetical wind farm. This will be effected by local lay of the land, you should be able to determine where there may be dead spots and so one. One thing to note is that this is a very complicated science, one which alot of resources and effort is sunk into (esspecially considering this is the basis or weather predcition, which supercompters were originally designed for).
+
+
+
+#+BEGIN_SRC python :results output
+import sys
+print(sys.version)
+print(sys.executab)
+#+END_SRC
+
+#+RESULTS:
+: 3.5.3 (v3.5.3:1880cb95a742, Jan 16 2017, 15:51:26) [MSC v.1900 32 bit (Intel)]
+: C:\Python35-32\python.exe

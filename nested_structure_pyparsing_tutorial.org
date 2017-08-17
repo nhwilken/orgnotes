@@ -1,0 +1,3 @@
+Making nested strucutre parser with pyparsing
+
+A typical problem with parsing a nested structure is that you want to extract data from a

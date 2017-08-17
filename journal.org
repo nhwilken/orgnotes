@@ -1,0 +1,41 @@
+#+STARTUP: indent
+#+STARTUP: Visual-Line
+
+
+* April 2017
+** 27
+
+Today I made some changes to some things. I also met with Sam and talked about the usual small talk stuff...eventually getting into some biblical stuff which I suspect is what he was getting after. I'm not sure if he was always intending to do the whole "decipleship" all along, but I think he become intersted when I told him I struggle with things. Why did I do that? Maybe I was looking for help and so told him that to try to get his interest. Maybe I was using that to try and get him more interested in me, so develope more energy from him? I'm not sure if I was being sneaky(which I'm sure is something I would like to think of myself) or if I was being desperate (which I think is the much more likely possibility).
+
+Either way, we have now agreed to go through I Corinthians together, and try and meet a some kind of regular interval and go over the test, which is mainly to help me ask any questions I might have about the text, force me to read the bible more regularly, and then potentially get more comfortble with praying... I guess. Which is something I internally want to do, but when faced with the idea of actually going about it I feel a strange amount of resistance...either to the idea of a more structured learning program, or maybe because its weird getting close to someone, or making a real connection with someone all of a sudden... I don't know.
+
+* June 2017
+** 22
+The major plans for today are as follows...
+- try to make some kind of effort for jobs in Calgary and Brisbane
+- Make some kind of headway with the website, specifically as it pertains to creating  a website to help me get jobs
+- Work on deep learning module... complete ass 4 and move on to the next lesson
+
+Applied for one job in Calgary (Data Analyst) and one Job in Brisbane (Project engineer). Which is pretty good! I wasn't able to get very far with the Deep learning assignment, I'm having a hard time with the way the code it working. How to you implement the matrix sizes.
+
+Not really sure how the pooling and convolutions work. The convolution uses a kernal/patch that moves over the image, one stride at a time. This has the effect that if the stride is more that one, then there is some kind of reduction in the output shape. But how does a convolutions make the output deeper? Pooling on the other hand performs a function, like max or min or average, to the kernal. It also moves with a stride.
+
+** 23
+
+- Again try to apply to one Canadian Job and one Australian job.
+- Work on the website, which I didn't do yesterday
+- Work on the next modules in deep learning
+
+
+* August
+
+** 4
+Calling Megan at Seven Generations Energy Ltd.
+Call - have they made a descition yet?
+no - what is their selection process? what kind of timeframe? can I expect an update when the descition is made whether I am selected or not?
+
+yes - for future applications is there anything I can improve on? anythin that stood out?
+
+587-894-1597
+
+
